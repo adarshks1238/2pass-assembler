@@ -155,7 +155,7 @@ function passTwo() {
     const upper = parseInt(intermediateArr[intermediateArr.length - 2][0], 16);
     const length = upper - lower;
 
-    let header = "H^" + intermediateArr[0][1].padEnd(6, "_") + "^" + intermediateArr[1][0]  "\n";
+    let header = "H^" + intermediateArr[0][1].padEnd(6, "_") + "^" + intermediateArr[1][0] + "^" + length.toString(16).padStart(6, "0").toUpperCase() +  "\n";
     let text = "", size = 0, start = intermediateArr[1][0];
     let recordOutput = "", x = 1;
 
