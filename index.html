@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass One and Pass Two Assembler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pass One and Pass Two Assembler</h1>
+
+        <div class="input-area">
+            <textarea id="assemblyCode" placeholder="Enter Assembly Code"></textarea>
+            <textarea id="optabCode" placeholder="Enter OPTAB"></textarea>
+        </div>
+
+        <div class="button-area">
+            <button id="passOneBtn">Pass One</button>
+            <button id="passTwoBtn" disabled>Pass Two</button>
+        </div>
+
+        <div class="output-area">
+            <h2>Output (Pass One)</h2>
+            <textarea id="intermediateCode" readonly placeholder="Intermediate Code"></textarea>
+            <textarea id="symtabCode" readonly placeholder="Symbol Table"></textarea>
+        </div>
+
+        <div class="output-area">
+            <h2>Output (Pass Two)</h2>
+            <textarea id="objectCode" readonly placeholder="Object Code"></textarea>
+            <textarea id="recordOutput" readonly placeholder="Header, Text, End Records"></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
